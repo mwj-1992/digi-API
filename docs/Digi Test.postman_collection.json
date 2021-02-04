@@ -1,0 +1,103 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Digi Test",
+		"_postman_id": "36bd3c8b-2c84-2e4b-b355-6c66b8e7a2e8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"url": "localhost:2222/api/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"name\": \"Wael\",\n\t\"email\": \"wael@wael.com\",\n\t\"password\":\"qwe1234A**++\"\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "localhost:2222/api/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\n\t\"email\": \"wael@wael.com\",\n\t\"password\":\"qwe1234A**++\"\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"request": {
+				"url": {
+					"raw": "localhost:2222/api/user/?name=wael&limit=10&offset=0",
+					"host": [
+						"localhost"
+					],
+					"port": "2222",
+					"path": [
+						"api",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "wael",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\n\t\"email\": \"wael@wael.com\",\n\t\"password\":\"qwe1234A**++\"\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
