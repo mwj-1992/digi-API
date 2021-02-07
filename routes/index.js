@@ -10,7 +10,7 @@ const corsOptions = {
       // !origin // allow requests with no origin (like mobile apps or curl requests)
       callback(null, true);
     } else {
-      logger.error(`Not allowed by CORS, Origin ${origin}`);
+      console.log(`Not allowed by CORS, Origin ${origin}`);
       callback(new Error('Not allowed by CORS'));
     }
   },
